@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #111;
+    color: white;
+    font-family: Arial, sans-serif;
+    flex-direction: column;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+canvas {
+    background-color: #222;
+    border: 2px solid white;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.scoreboard {
+    margin-bottom: 10px; /* Space between score and canvas */
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    background-color: transparent; /* Remove background color */
+    border: none; /* Remove border */
+    box-shadow: none; /* Remove any shadow */
+}
+
+@media (max-width: 600px) {
+    .scoreboard {
+        font-size: 20px;
+    }
+}
